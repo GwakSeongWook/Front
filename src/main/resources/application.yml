@@ -1,0 +1,31 @@
+server:
+  port: 80
+  servlet:
+    context-path: /
+    encoding:
+      charset: utf-8
+      enabled: true
+      
+spring:
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/views/
+#      suffix: .jsp
+  thymeleaf:
+    enabled: true
+    cache: false
+      
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://my-tutorial-db.cufunmxdl8ey.ap-northeast-2.rds.amazonaws.com:3306/tutorial?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: user  
+    password: password
+    
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    open-in-view: true
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+ 
+       

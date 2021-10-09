@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/default}">
+<header th:fragment="headerFragment">
+	<nav class="header_nav">
+		<img class="header_logo" src="img/logo.png">
+		<p class="header_name">ME:ET</p>
+	</nav>
+		<ul>
+			<li class="header_list"><a href="main"><img style="padding-top: 3px;" src="/img/home.png"></a></li>
+			<li class="header_list"><a href="signin"><img style="padding-top: 3px;" src="/img/user.png"></a></li>
+		</ul>
+</header>
+</html>
